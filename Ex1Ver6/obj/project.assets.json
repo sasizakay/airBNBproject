@@ -901,11 +901,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sasiz\\Source\\Repos\\Ex1Ver6Cloned\\Ex1Ver6\\Ex1Ver6.csproj",
-      "projectName": "Ex1Ver6",
-      "projectPath": "C:\\Users\\sasiz\\Source\\Repos\\Ex1Ver6Cloned\\Ex1Ver6\\Ex1Ver6.csproj",
+      "projectUniqueName": "C:\\Users\\sasiz\\Source\\Repos\\airBNBproject\\Ex1Ver6\\airBNBserver.csproj",
+      "projectName": "airBNBserver",
+      "projectPath": "C:\\Users\\sasiz\\Source\\Repos\\airBNBproject\\Ex1Ver6\\airBNBserver.csproj",
       "packagesPath": "C:\\Users\\sasiz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sasiz\\Source\\Repos\\Ex1Ver6Cloned\\Ex1Ver6\\obj\\",
+      "outputPath": "C:\\Users\\sasiz\\Source\\Repos\\airBNBproject\\Ex1Ver6\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sasiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
