@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Flats</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+    <script src="./../js/FlatScript.js"></script>
+    <script src="./../js/ajaxCalls.js"></script>
+    <script src="../js/registerScript.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/style2.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Flats page</h1>
+    <div id="InsersFlat">
+        <form id="flatForm">
+            <label>ID: </label>
+            <input type="text" id="flatID" class="input-data" required /> <br />
+            <label>City: </label>
+            <input list="flatCities" id="Cities" class="input-data" required />
+            <datalist id="flatCities">
+                <option value="Tel-Aviv">
+                <option value="Afula">
+                <option value="Haifa">
+                <option value="Hadera">
+            </datalist>
+            <br />
+            <label>Adress: </label>
+            <input type="text" id="flatAdress" class="input-data" required maxlength="25" /> <br />
+            <label>Rooms: </label>
+            <input type="text" id="flatNumOfRooms" class="input-data" required
+                   pattern="[1-8]{1}" /> <br />
+            <label>Price: </label>
+            <input type="text" id="flatPrice" class="input-data" required /> <br />
+            <input type="submit" class="formSubmitBTN" value="Add Flat" />
+        </form>
+    </div>
+
+    <br />
+    <div class="login">
+        <button type="button" id="login" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Log In</button>
+        <a href="./registration.html"><input type="button" id="signup" value="Sign up" /></a>
+        <a href="./updateDetails.html"><input type="button" id="update" value="Update Details"/></a>
+        <button type="button" id="logout" onclick="clearSessionStorage()">Log Out</button>
+    </div>
+
+    <!--Login Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Log in</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <label>Email: </label>
+                        <input type="email" id="email" class="input-data" required /> <br />
+                        <label>Password: </label>
+                        <input type="password" id="password" class="input-data" required /> <br />
+                        <input type="submit" class="loginFormSubmitBTN" value="Log in" data-dismiss="" />
+                    </form>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Div for dynamic rendering the flat's-->
+    <div id="showFlats">
+
+    </div>
+
+</body>
+</html>

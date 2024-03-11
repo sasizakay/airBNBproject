@@ -1,0 +1,113 @@
+﻿body {
+    background-color: rgba(45, 50, 80, 0.9) !important;
+    padding-left: 4rem;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#InsersFlat, #insertVacation {
+    font-size: 1.5rem;
+}
+
+.formSubmitBTN {
+    background-color: rgba(212, 182, 129,0.9);
+    color: rgba(5, 5, 5, 0.9);
+}
+
+.showVacations {
+    background-color: rgba(212, 182, 129,0.9);
+    color: rgba(5, 5, 5, 0.9);
+}
+
+.flat, .vacation {
+    display: inline-block;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 18rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 1rem;
+    padding: 2rem;
+    font-size: 18px;
+    background-color: rgb(246, 177, 122);
+    height: 290px;
+    max-width: 220px;
+    word-wrap: break-word;
+    overflow-x: hidden;
+}
+
+.input-data {
+    margin: 5px;
+    padding: 2px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    background-color: rgba(112, 119, 161, 0.99);
+    color: white;
+    text-align: right;
+}
+
+#flatForm label, #vForm label, #regForm label {
+    color: rgb(246, 177, 122);
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+    width: 15%;
+    max-width: 120px;
+}
+
+#regForm label {
+    width: 100%;
+}
+
+#InsersFlat {
+    width: 50%;
+}
+
+.btn {
+    width: 110%;
+    position: relative;
+    top: 15%;
+}
+
+.subtitle {
+    text-decoration: underline;
+}
+
+.card-body {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+    .card-body span {
+        margin-right: 5px;
+        font-size: 13px;
+    }
+
+    .card-body p {
+        max-width: 120px;
+    }
+
+h1 {
+    color: rgba(200, 200, 200, 0.9);
+    text-decoration: underline;
+    font-size: 6rem;
+}
+
+.flat::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+[readonly] {
+    background-color: rgba(112, 119, 161, 0.4);
+}
+
+.login {
+    width: 200px;
+}

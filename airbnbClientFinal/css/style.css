@@ -1,0 +1,29 @@
+body {
+    font-size: 14px;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#insertUser {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+#regForm, #updateForm {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+#regForm label, #updateForm label {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.input-data {
+    text-align: left;
+}

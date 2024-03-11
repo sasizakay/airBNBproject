@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Vacations</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+    <script src="./../js/ajaxCalls.js"></script>
+    <script src="./../js/VacationScript.js"></script>
+    <script src="../js/registerScript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/style2.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Vacations Page</h1>
+    <div id="insertVacation">
+        <form id="vForm">
+            <label>Flat ID: </label>
+            <input type="text" id="vacationFlatID" class="input-data" readonly /> <br />
+            <label>Vacation ID: </label>
+            <input type="text" id="vacationID" class="input-data" required /> <br />
+            <label>User ID: </label>
+            <input type="text" id="vacationUserID" class="input-data" readonly /> <br />
+            <label>Start Date: </label>
+            <input type="date" id="vacationStartDate" class="input-data" required /> <br />
+            <label>End Date: </label>
+            <input type="date" id="vacationEndDate" class="input-data" required /> <br />
+            <input type="submit" class="formSubmitBTN" value="Add Vacation" />
+            <br />
+        </form>
+    </div>
+    <button class="showVacations" onclick="renderVacations()">Get all my vacations</button>
+    <a href="./Flats.html"><input type="button" id="GoToFlatsPage" value="Go to flats page" /></a>
+    <div id="showVacations"></div>
+</body>
+</html>
